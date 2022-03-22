@@ -1,0 +1,17 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 2,
+	"name": "drinkteaeatbiscuits/COMPONENT_NAME",
+	"version": "0.1.0",
+	"title": "COMPONENT_NAME",
+	"category": "layout",
+	"icon": "smiley",
+	"description": "A block called COMPONENT_NAME",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "COMPONENT_NAME",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

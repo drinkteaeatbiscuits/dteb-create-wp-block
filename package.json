@@ -1,0 +1,28 @@
+{
+  "name": "dteb-create-blocks",
+  "version": "1.0.0",
+  "description": "Create a new wp block inside our plugin.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/drinkteaeatbiscuits/dteb-create-wp-block.git"
+  },
+  "author": "Drink Tea Eat Biscuits",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/drinkteaeatbiscuits/dteb-create-wp-block/issues"
+  },
+  "bin": {
+    "new-block": "./index.js"
+  },
+  "homepage": "https://github.com/drinkteaeatbiscuits/dteb-create-wp-block#readme",
+  "dependencies": {
+    "chalk": "^5.0.1",
+    "commander": "^9.1.0",
+    "prettier": "^2.6.0"
+  },
+  "type": "module"
+}
