@@ -8,7 +8,22 @@
 	"icon": "smiley",
 	"description": "A block called COMPONENT_NAME",
 	"supports": {
-		"html": false
+		"html": false,
+		"align": ["full"]
+	},
+	"attributes": {
+		"align": {
+			"type": "string",
+			"default": "full"
+		},
+		"text": {
+			"type": "string",
+			"default": ""
+		},
+		"blockColor": {
+			"type": "string",
+			"default": ""
+		}
 	},
 	"textdomain": "COMPONENT_NAME",
 	"editorScript": "file:./index.js",

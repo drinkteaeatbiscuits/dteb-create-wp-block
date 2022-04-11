@@ -36,33 +36,9 @@ const blockTemplatePath = `./templates/block.json`;
 const componentDir = `src/${componentName}`;
 
 const indexPath = `${componentDir}/index.js`;
-const editPath = `${componentDir}/${componentName}-edit.js`;
-const savePath = `${componentDir}/${componentName}-save.js`;
+const editPath = `${componentDir}/${componentName}-edit.tsx`;
+const savePath = `${componentDir}/${componentName}-save.tsx`;
 const blockPath = `${componentDir}/block.json`;
-
-// // Our index template is super straightforward, so we'll just inline it for now.
-// const indexTemplate = prettier.format(`\
-// import { registerBlockType } from '@wordpress/blocks';
-// import './style.scss';
-
-// import Edit from './${componentName}-edit';
-// import save from './${componentName}-save';
-
-// registerBlockType( 'drinkteaeatbiscuits/${componentName}', {
-// 	edit: Edit,
-// 	save,
-// });
-// export * from './${componentName}';
-// export { default } from './${componentName}';
-// `);
-
-// const styleTemplate = prettier.format(`\
-// 	.wp-block-drinkteaeatbiscuits-${componentName} {
-// 		background-color: #21759b;
-// 		color: #fff;
-// 		padding: 2px;
-// 	}
-// `);
 
 
 logIntro({ name: componentName, dir: componentDir });
@@ -171,7 +147,7 @@ mkDirPromise(componentDir)
 
   .then(() =>
     writeFilePromise(`${componentDir}/${componentName}.scss`, `.wp-block-drinkteaeatbiscuits-${componentName} {
-		background-color: #21759b;
+		position: relative;
 	}` )
   )
   .then((template) => {
@@ -181,7 +157,7 @@ mkDirPromise(componentDir)
 
   .then(() =>
     writeFilePromise(`${componentDir}/${componentName}-editor.scss`, `.wp-block-drinkteaeatbiscuits-${componentName} {
-		background-color: #21759b;
+      position: relative;
 	}` )
   )
   .then((template) => {
