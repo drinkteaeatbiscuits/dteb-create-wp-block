@@ -1,12 +1,13 @@
 {
 	"$schema": "https://schemas.wp.org/trunk/block.json",
-	"apiVersion": 2,
+	"apiVersion": 3,
 	"name": "drinkteaeatbiscuits/COMPONENT_NAME",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"title": "COMPONENT_NAME",
-	"category": "layout",
+	"category": "dteb-blocks",
 	"icon": "smiley",
 	"description": "A block called COMPONENT_NAME",
+	"keywords": [ "dteb" ],
 	"supports": {
 		"html": false,
 		"align": ["full"]
@@ -15,18 +16,10 @@
 		"align": {
 			"type": "string",
 			"default": "full"
-		},
-		"text": {
-			"type": "string",
-			"default": ""
-		},
-		"blockColor": {
-			"type": "string",
-			"default": ""
 		}
 	},
 	"textdomain": "COMPONENT_NAME",
 	"editorScript": "file:./index.js",
-	"editorStyle": "file:./index.css",
-	"style": "file:./style-index.css"
+	"editorStyle": "file:./COMPONENT_NAME-editor.scss",
+	"style": ["file:./COMPONENT_NAME.scss", "COMPONENT_NAME-style"]
 }

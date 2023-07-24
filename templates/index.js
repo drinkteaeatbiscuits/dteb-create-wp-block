@@ -1,5 +1,5 @@
 import { registerBlockType } from '@wordpress/blocks';
-import './style.scss';
+import './COMPONENT_NAME.scss';
 
 import Edit from './COMPONENT_NAME-edit';
 import save from './COMPONENT_NAME-save';

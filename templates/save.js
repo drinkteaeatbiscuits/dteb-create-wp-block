@@ -1,14 +1,13 @@
 import React from "react";
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { useBlockProps } from '@wordpress/block-editor';
 
 export default function save({ attributes }) {
 	
-	const { text, blockColor } = attributes;
+	const {  } = attributes;
 
 	return (
-		<section { ...useBlockProps.save() } style={{ backgroundColor: blockColor }}>
+		<section { ...useBlockProps.save() } >
 
-			 <RichText.Content className="" tagName="p" value={ text } />
 
 		 </section>
 	 );

@@ -129,26 +129,26 @@ mkDirPromise(componentDir)
   })
 
 
-  .then(() =>
-    writeFilePromise(`${componentDir}/style.scss`, `@import '${componentName}.scss';` )
-  )
-  .then((template) => {
-    logItemCompletion('style.scss built and saved to disk.');
-    return template;
-  })
+  // .then(() =>
+  //   writeFilePromise(`${componentDir}/style.scss`, `@import '${componentName}.scss';` )
+  // )
+  // .then((template) => {
+  //   logItemCompletion('style.scss built and saved to disk.');
+  //   return template;
+  // })
 
-  .then(() =>
-    writeFilePromise(`${componentDir}/editor.scss`, `@import '${componentName}-editor.scss';` )
-  )
-  .then((template) => {
-    logItemCompletion('editor.scss built and saved to disk.');
-    return template;
-  })
+  // .then(() =>
+  //   writeFilePromise(`${componentDir}/editor.scss`, `@import '${componentName}-editor.scss';` )
+  // )
+  // .then((template) => {
+  //   logItemCompletion('editor.scss built and saved to disk.');
+  //   return template;
+  // })
 
   .then(() =>
     writeFilePromise(`${componentDir}/${componentName}.scss`, `.wp-block-drinkteaeatbiscuits-${componentName} {
 		position: relative;
-	}` )
+}` )
   )
   .then((template) => {
     logItemCompletion(`${componentName}.scss built and saved to disk.`);
@@ -158,7 +158,7 @@ mkDirPromise(componentDir)
   .then(() =>
     writeFilePromise(`${componentDir}/${componentName}-editor.scss`, `.wp-block-drinkteaeatbiscuits-${componentName} {
       position: relative;
-	}` )
+}` )
   )
   .then((template) => {
     logItemCompletion(`${componentName}-editor.scss built and saved to disk.`);
