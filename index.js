@@ -129,13 +129,13 @@ mkDirPromise(componentDir)
   })
 
 
-  // .then(() =>
-  //   writeFilePromise(`${componentDir}/style.scss`, `@import '${componentName}.scss';` )
-  // )
-  // .then((template) => {
-  //   logItemCompletion('style.scss built and saved to disk.');
-  //   return template;
-  // })
+  .then(() =>
+    writeFilePromise(`${componentDir}/style.scss`, `@import '${componentName}.scss';` )
+  )
+  .then((template) => {
+    logItemCompletion('style.scss built and saved to disk.');
+    return template;
+  })
 
   // .then(() =>
   //   writeFilePromise(`${componentDir}/editor.scss`, `@import '${componentName}-editor.scss';` )
@@ -147,7 +147,7 @@ mkDirPromise(componentDir)
 
   .then(() =>
     writeFilePromise(`${componentDir}/${componentName}.scss`, `.wp-block-drinkteaeatbiscuits-${componentName} {
-		position: relative;
+	position: relative;
 }` )
   )
   .then((template) => {
@@ -157,7 +157,7 @@ mkDirPromise(componentDir)
 
   .then(() =>
     writeFilePromise(`${componentDir}/${componentName}-editor.scss`, `.wp-block-drinkteaeatbiscuits-${componentName} {
-      position: relative;
+    position: relative;
 }` )
   )
   .then((template) => {

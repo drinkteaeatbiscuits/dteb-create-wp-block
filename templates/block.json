@@ -20,6 +20,6 @@
 	},
 	"textdomain": "COMPONENT_NAME",
 	"editorScript": "file:./index.js",
-	"editorStyle": "file:./COMPONENT_NAME-editor.scss",
-	"style": ["file:./COMPONENT_NAME.scss", "COMPONENT_NAME-style"]
+	"editorStyle": "file:./index.css",
+	"style": ["file:./style-index.css", "COMPONENT_NAME-style"]
 }
